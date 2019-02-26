@@ -1,0 +1,72 @@
+<% if flash[:notice] %>
+  <p><%= flash[:notice] %></p>
+<% end %>
+
+
+  <body>
+
+<div class="col-xs-3">
+<h2>User info</h2>
+
+ <%= attachment_image_tag @user, :profile_image, :fill, 20, 20,fallback: "no_image.jpg" %>
+      
+<table class="table">
+<tbody>
+       <tr>
+            <th>name</th>
+            <th><%= @user.username %></th>
+        </tr>
+   
+    <tr>
+        <th>introduction</th>
+        <th><%= @user.introduction %></th>
+    </tr>    
+       <tr> <%= link_to "",edit_user_path(@user), class:"glyphicon glyphicon-wrench edit_user_(@user)	"%> </tr>
+         
+    </tr>
+  </tbody>  
+  
+</table>
+
+
+    <h3>New books</h3>
+
+    <%= form_for(@book) do |f| %>
+    <h4> Title</h4> 
+    <%= f.text_field :title,class:"book_title" %>
+ 
+   <h4> Body</h4>
+    <%= f.text_area :body,class:"book_body"  %>
+   <br> <%= f.submit 'Create Book' %> </br>
+
+
+<% end %>
+</div>
+
+<div class="col-xs-9">
+ <h2> Books</h2>
+ <table>
+     <thead>
+      <tr>
+       <th>Title</th>
+       <th>Option</th>
+       <th colspan="2"></th>
+      </tr>
+     </thead>
+     
+     <tbody>
+      <% @user.books.each do |book| %>
+      <tr>
+       <td>
+        <%=link_to book.title,book_path(book) %>
+       </td>
+       <td>
+        <%= book.body %>
+       </td>
+       <td>
+      
+        <% end %>
+         
+     </tbody>
+    </table>
+    </div>

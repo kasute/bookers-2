@@ -1,0 +1,66 @@
+ <body>
+<div class="col-xs-3">
+<h2>User info</h2>
+
+ <%= attachment_image_tag @user, :profile_image, :fill, 20, 20,fallback: "no_image.jpg" %>
+      
+<table class="table">
+<tbody>
+       <tr>
+            <th>name</th>
+           <th><%= @user.username %></th> 
+        </tr>
+   
+    <tr>
+        <th>introduction</th>
+       <th><%= @user.introduction %></th> 
+    </tr>    
+       <tr> <%= link_to "",edit_user_path, class:"glyphicon glyphicon-wrench edit_user_(@user)	"%> </tr>
+         
+    </tr>
+  </tbody>  
+  
+</table>
+
+
+    <h3>New books</h3>
+
+    <%= form_for(@book) do |f| %>
+    <h4> Title</h4> 
+    <%= f.text_field :title,class:"book_title" %>
+ 
+   <h4> Opinion</h4>
+    <%= f.text_area :body,class:"book_body"  %>
+   <br> <%= f.submit 'Create Book' %> </br>
+<% end %>
+</div>
+
+<div class="col-xs-9">
+ <h2> Book detail</h2>
+ 
+ <table>
+     <thead>
+      <tr>
+       <th>Title</th>
+       <th>Option</th>
+       <th colspan="2"></th>
+      </tr>
+     </thead>
+     
+     <tbody>
+     
+      <tr>
+       <td>
+        <%=@books.title %>
+       </td>
+       <td>
+        <%= @books.body %>
+       </td>
+       <td>
+        <%= link_to "edit",edit_book_path,class:"edit_book_(@books.id)"%>
+         <%= link_to "delete",book_path(@books.id), method: :delete, data: {confirm: "Are you sure ?"},class:"destroy_book_(@books.id)" %>
+      </tr>           
+         
+     </tbody>
+    </table>
+    </div>

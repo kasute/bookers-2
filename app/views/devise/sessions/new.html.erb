@@ -1,0 +1,22 @@
+<div class="form-body">
+<div class="row">
+    <div class="col-xs-offset-1 col-xs-10">
+        <div class="text-center">
+            <h4>ユーザーネームと<br>パスワードを入力してください。</h4>
+        </div>
+    </div>
+</div>
+ 
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <div class="form-group has-icon">
+      <label class="control-label sr-only" for="inputusername">username</label>
+      <%= f.text_field :username, class:"name"%>
+      <span class="fa fa-envelope form-control-icon" aria-hidden="true"></span>
+    </div>                                            
+    <div class="form-group has-icon">
+      <label class="control-label sr-only" for="inputEmail">Password</label>
+      <%= f.password_field :password, class:"password" %>
+      <span class="fa fa-lock form-control-icon" aria-hidden="true"></span>
+    </div>
+    <%= f.submit "サインイン", class:"btn btn-lg btn-block btn-base-1 mt-20" %>
+  <% end %> 

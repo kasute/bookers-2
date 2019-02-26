@@ -1,0 +1,33 @@
+<%= form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this photo from being saved:</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+   
+  <% end %>
+   <h3> User info</h3>
+  <div class="field">
+    <%= f.label :username %><br>
+    <%= f.text_field :username, class:"name" %>
+  </div>
+  
+  <div class="field">
+     <%= f.label :image%><br>
+    <%= f.file_field :profile_image, class:"user_image" %><br>
+  </div>
+  
+  <div class="field">
+    <%= f.label :introduction %><br>
+    <%= f.text_field :introduction, class:"introduction" %>   
+  </div>
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
