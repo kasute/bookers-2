@@ -1,7 +1,7 @@
 class User < ApplicationRecord
        devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
-validates :email, uniqueness: true
+        validates :email, uniqueness: true
          has_many :books, dependent: :destroy
           validates :username, presence: true, uniqueness: true, length: {maximum: 20}
           attachment :profile_image

@@ -16,7 +16,7 @@
         <th>introduction</th>
         <%= @user.introduction %>
     </tr>    
-       <tr> <%= link_to "",edit_user_path(@user), class:"glyphicon glyphicon-wrench edit_user_(@user)	"%> </tr>
+       <tr> <%= link_to "",edit_user_path(@user), class:"glyphicon glyphicon-wrench edit_user_#{@user.id}	"%> </tr>
          
     </tr>
   </tbody>  
@@ -42,6 +42,7 @@
  <table>
      <thead>
       <tr>
+       <th> </th>
        <th>Title</th>
        <th>Option</th>
        <th colspan="2"></th>
@@ -51,6 +52,9 @@
      <tbody>
       <% @books.each do |book| %>
       <tr>
+       <td>
+         <%= attachment_image_tag @user, :profile_image, :fill, 20, 20,fallback: "no_image.jpg" %>
+       </td>
        <td>
         <%=book.title %>
        </td>

@@ -15,7 +15,7 @@
         <th>introduction</th>
        <th><%= @user.introduction %></th> 
     </tr>    
-       <tr> <%= link_to "",edit_user_path, class:"glyphicon glyphicon-wrench edit_user_(@user)	"%> </tr>
+       <tr> <%= link_to "",edit_user_path(@user), class:"glyphicon glyphicon-wrench edit_user_#{@user.id}	"%> </tr>
          
     </tr>
   </tbody>  
@@ -41,6 +41,7 @@
  <table>
      <thead>
       <tr>
+       <th> </th>
        <th>Title</th>
        <th>Option</th>
        <th colspan="2"></th>
@@ -51,14 +52,17 @@
      
       <tr>
        <td>
+         <%= attachment_image_tag @user, :profile_image, :fill, 20, 20,fallback: "no_image.jpg" %>
+       </td>
+       <td>
         <%=@books.title %>
        </td>
        <td>
         <%= @books.body %>
        </td>
        <td>
-        <%= link_to "edit",edit_book_path,class:"edit_book_(@books.id)"%>
-         <%= link_to "delete",book_path(@books.id), method: :delete, data: {confirm: "Are you sure ?"},class:"destroy_book_(@books.id)" %>
+        <%= link_to "edit",edit_book_path,class:"edit_book_{@books.id}"%>
+         <%= link_to "delete",book_path(@books.id), method: :delete, data: {confirm: "Are you sure ?"},class:"destroy_book_#{@books.id}" %>
       </tr>           
          
      </tbody>
