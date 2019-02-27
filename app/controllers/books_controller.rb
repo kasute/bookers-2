@@ -2,6 +2,13 @@ class BooksController < ApplicationController
 
  def new
  end
+  def ensure_correct_user
+    @user = User.find_by(id:params[:id])
+    if @user.id != @current_user.id
+      flash[:notice] = "権限がありません"
+      redirect_to("/users/index")
+     end
+  end
  
  def index
      @user =current_user
@@ -14,6 +21,11 @@ class BooksController < ApplicationController
     @user= current_user
     @book= Book.new
     @books= Book.find(params[:id])
+    @users = User.find_by(id:params[:id])
+    if @user.id != @current_user.id
+      flash[:notice] = "権限がありません"
+      redirect_to("/users/index")
+    end
  end
  
  def create

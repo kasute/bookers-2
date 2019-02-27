@@ -19,6 +19,7 @@ class UsersController < ApplicationController
   end
   
   def about
+    
   end
   
   def name
