@@ -46343,3 +46343,1300 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 260ms (Views: 257.2ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/" for 150.249.153.63 at 2019-02-27 09:45:02 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#top as HTML
+  Rendering users/top.html.erb within layouts/application
+  Rendered users/top.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:24
+Completed 200 OK in 205ms (Views: 190.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/sign_in" for 150.249.153.63 at 2019-02-27 09:45:05 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Redirected to https://27a9f77623f2410f9b8bb59adf71d1f8.vfs.cloud9.ap-southeast-1.amazonaws.com/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 150.249.153.63 at 2019-02-27 09:45:05 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#top as HTML
+  Rendering users/top.html.erb within layouts/application
+  Rendered users/top.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:24
+Completed 200 OK in 45ms (Views: 43.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/8" for 150.249.153.63 at 2019-02-27 09:45:07 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:24
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", "8"]]
+  ↳ app/views/users/show.html.erb:63
+  Rendered users/show.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 101ms (Views: 88.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/8" for 150.249.153.63 at 2019-02-27 09:47:32 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:24
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", "8"]]
+  ↳ app/views/users/show.html.erb:63
+  Rendered users/show.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 75ms (Views: 71.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 150.249.153.63 at 2019-02-27 09:49:56 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#top as HTML
+  Rendering users/top.html.erb within layouts/application
+  Rendered users/top.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:24
+Completed 200 OK in 199ms (Views: 190.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/sign_in" for 150.249.153.63 at 2019-02-27 09:49:58 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Redirected to https://27a9f77623f2410f9b8bb59adf71d1f8.vfs.cloud9.ap-southeast-1.amazonaws.com/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 150.249.153.63 at 2019-02-27 09:49:58 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#top as HTML
+  Rendering users/top.html.erb within layouts/application
+  Rendered users/top.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:24
+Completed 200 OK in 46ms (Views: 44.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/8" for 150.249.153.63 at 2019-02-27 09:49:59 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:24
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", "8"]]
+  ↳ app/views/users/show.html.erb:63
+  Rendered users/show.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 104ms (Views: 92.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/8" for 150.249.153.63 at 2019-02-27 09:50:08 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:24
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", "8"]]
+  ↳ app/views/users/show.html.erb:63
+  Rendered users/show.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 75ms (Views: 70.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users" for 150.249.153.63 at 2019-02-27 09:50:09 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.7ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:30: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+..._field :title,class:"book_title" );@output_buffer.safe_appen...
+...                     ^~~~~~~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:33: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...ext_area :body,class:"book_body"  );@output_buffer.safe_appe...
+...                      ^~~~~~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:39: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+        <div class="col-xs-9">
+                    ^~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:39: syntax error, unexpected tSTRING_BEG, expecting tSTRING_DEND
+        <div class="col-xs-9">
+                            ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:45: syntax error, unexpected tINTEGER, expecting tSTRING_DEND
+       <th colspan="3"></th>
+                    ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:52: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...ill, 20, 20,fallback: "no_image.jpg" );@output_buffer.safe_a...
+...                       ^~~~~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:58: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...ut_buffer.append=( link_to"show",user_path(user),class:"user...
+...                           ^~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:58: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...w",user_path(user),class:"user_#{user.id}" );@output_buffer....
+...                          ^~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:61: unknown regexp options - tr
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:63: syntax error, unexpected '<'
+     </tbody>
+     ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:64: unknown regexp options - tabl
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:67: unknown regexp options - bdy
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:72: unterminated string meets end of file
+          end
+             ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:72: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+          end
+             ^):
+  
+app/views/users/index.html.erb:30: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:33: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:39: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:39: syntax error, unexpected tSTRING_BEG, expecting tSTRING_DEND
+app/views/users/index.html.erb:45: syntax error, unexpected tINTEGER, expecting tSTRING_DEND
+app/views/users/index.html.erb:52: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:58: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:58: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:61: unknown regexp options - tr
+app/views/users/index.html.erb:63: syntax error, unexpected '<'
+app/views/users/index.html.erb:64: unknown regexp options - tabl
+app/views/users/index.html.erb:67: unknown regexp options - bdy
+app/views/users/index.html.erb:72: unterminated string meets end of file
+app/views/users/index.html.erb:72: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+Started GET "/books" for 150.249.153.63 at 2019-02-27 09:50:59 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:7
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:54
+  Rendered books/index.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 64ms (Views: 61.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/8" for 150.249.153.63 at 2019-02-27 09:51:27 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:24
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", "8"]]
+  ↳ app/views/users/show.html.erb:63
+  Rendered users/show.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 54ms (Views: 51.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for 150.249.153.63 at 2019-02-27 09:51:34 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.7ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:30: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+..._field :title,class:"book_title" );@output_buffer.safe_appen...
+...                     ^~~~~~~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:33: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...ext_area :body,class:"book_body"  );@output_buffer.safe_appe...
+...                      ^~~~~~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:39: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+        <div class="col-xs-9">
+                    ^~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:39: syntax error, unexpected tSTRING_BEG, expecting tSTRING_DEND
+        <div class="col-xs-9">
+                            ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:45: syntax error, unexpected tINTEGER, expecting tSTRING_DEND
+       <th colspan="3"></th>
+                    ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:52: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...ill, 20, 20,fallback: "no_image.jpg" );@output_buffer.safe_a...
+...                       ^~~~~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:58: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...ut_buffer.append=( link_to"show",user_path(user),class:"user...
+...                           ^~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:58: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...w",user_path(user),class:"user_#{user.id}" );@output_buffer....
+...                          ^~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:61: unknown regexp options - tr
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:63: syntax error, unexpected '<'
+     </tbody>
+     ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:64: unknown regexp options - tabl
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:67: unknown regexp options - bdy
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:72: unterminated string meets end of file
+          end
+             ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:72: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+          end
+             ^):
+  
+app/views/users/index.html.erb:30: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:33: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:39: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:39: syntax error, unexpected tSTRING_BEG, expecting tSTRING_DEND
+app/views/users/index.html.erb:45: syntax error, unexpected tINTEGER, expecting tSTRING_DEND
+app/views/users/index.html.erb:52: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:58: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:58: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:61: unknown regexp options - tr
+app/views/users/index.html.erb:63: syntax error, unexpected '<'
+app/views/users/index.html.erb:64: unknown regexp options - tabl
+app/views/users/index.html.erb:67: unknown regexp options - bdy
+app/views/users/index.html.erb:72: unterminated string meets end of file
+app/views/users/index.html.erb:72: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+Started GET "/users/8" for 150.249.153.63 at 2019-02-27 09:51:40 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:24
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", "8"]]
+  ↳ app/views/users/show.html.erb:63
+  Rendered users/show.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 47ms (Views: 44.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books" for 150.249.153.63 at 2019-02-27 09:51:43 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:7
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:54
+  Rendered books/index.html.erb within layouts/application (26.4ms)
+Completed 200 OK in 68ms (Views: 65.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users" for 150.249.153.63 at 2019-02-27 09:51:44 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:30: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+..._field :title,class:"book_title" );@output_buffer.safe_appen...
+...                     ^~~~~~~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:33: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...ext_area :body,class:"book_body"  );@output_buffer.safe_appe...
+...                      ^~~~~~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:39: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+        <div class="col-xs-9">
+                    ^~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:39: syntax error, unexpected tSTRING_BEG, expecting tSTRING_DEND
+        <div class="col-xs-9">
+                            ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:45: syntax error, unexpected tINTEGER, expecting tSTRING_DEND
+       <th colspan="3"></th>
+                    ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:52: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...ill, 20, 20,fallback: "no_image.jpg" );@output_buffer.safe_a...
+...                       ^~~~~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:58: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...ut_buffer.append=( link_to"show",user_path(user),class:"user...
+...                           ^~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:58: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...w",user_path(user),class:"user_#{user.id}" );@output_buffer....
+...                          ^~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:61: unknown regexp options - tr
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:63: syntax error, unexpected '<'
+     </tbody>
+     ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:64: unknown regexp options - tabl
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:67: unknown regexp options - bdy
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:72: unterminated string meets end of file
+          end
+             ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:72: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+          end
+             ^):
+  
+app/views/users/index.html.erb:30: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:33: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:39: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:39: syntax error, unexpected tSTRING_BEG, expecting tSTRING_DEND
+app/views/users/index.html.erb:45: syntax error, unexpected tINTEGER, expecting tSTRING_DEND
+app/views/users/index.html.erb:52: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:58: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:58: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:61: unknown regexp options - tr
+app/views/users/index.html.erb:63: syntax error, unexpected '<'
+app/views/users/index.html.erb:64: unknown regexp options - tabl
+app/views/users/index.html.erb:67: unknown regexp options - bdy
+app/views/users/index.html.erb:72: unterminated string meets end of file
+app/views/users/index.html.erb:72: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+Started GET "/users/8" for 150.249.153.63 at 2019-02-27 09:57:55 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:24
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", "8"]]
+  ↳ app/views/users/show.html.erb:63
+  Rendered users/show.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 56ms (Views: 52.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books" for 150.249.153.63 at 2019-02-27 09:58:00 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:7
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:54
+  Rendered books/index.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 62ms (Views: 59.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/8" for 150.249.153.63 at 2019-02-27 09:58:02 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:24
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", "8"]]
+  ↳ app/views/users/show.html.erb:63
+  Rendered users/show.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 55ms (Views: 52.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/books" for 150.249.153.63 at 2019-02-27 09:58:04 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:7
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:54
+  Rendered books/index.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 63ms (Views: 60.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/8" for 150.249.153.63 at 2019-02-27 09:58:06 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:24
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", "8"]]
+  ↳ app/views/users/show.html.erb:63
+  Rendered users/show.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 54ms (Views: 51.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for 150.249.153.63 at 2019-02-27 09:58:09 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:30: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+..._field :title,class:"book_title" );@output_buffer.safe_appen...
+...                     ^~~~~~~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:33: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...ext_area :body,class:"book_body"  );@output_buffer.safe_appe...
+...                      ^~~~~~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:37: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+   <table class="table table-striped">
+                 ^~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:37: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...ble class="table table-striped">
+...                              ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:39: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+        <div class="col-xs-9">
+                    ^~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:39: syntax error, unexpected tSTRING_BEG, expecting tSTRING_DEND
+        <div class="col-xs-9">
+                            ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:45: syntax error, unexpected tINTEGER, expecting tSTRING_DEND
+       <th colspan="3"></th>
+                    ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:52: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...ill, 20, 20,fallback: "no_image.jpg" );@output_buffer.safe_a...
+...                       ^~~~~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:58: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...ut_buffer.append=( link_to"show",user_path(user),class:"user...
+...                           ^~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:58: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...w",user_path(user),class:"user_#{user.id}" );@output_buffer....
+...                          ^~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:61: unknown regexp options - tr
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:63: syntax error, unexpected '<'
+     </tbody>
+     ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:64: unknown regexp options - tabl
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:67: unknown regexp options - bdy
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:72: unterminated string meets end of file
+          end
+             ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:72: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+          end
+             ^):
+  
+app/views/users/index.html.erb:30: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:33: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:37: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:37: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+app/views/users/index.html.erb:39: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:39: syntax error, unexpected tSTRING_BEG, expecting tSTRING_DEND
+app/views/users/index.html.erb:45: syntax error, unexpected tINTEGER, expecting tSTRING_DEND
+app/views/users/index.html.erb:52: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:58: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:58: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:61: unknown regexp options - tr
+app/views/users/index.html.erb:63: syntax error, unexpected '<'
+app/views/users/index.html.erb:64: unknown regexp options - tabl
+app/views/users/index.html.erb:67: unknown regexp options - bdy
+app/views/users/index.html.erb:72: unterminated string meets end of file
+app/views/users/index.html.erb:72: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+Started GET "/users/8" for 150.249.153.63 at 2019-02-27 09:58:36 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:24
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", "8"]]
+  ↳ app/views/users/show.html.erb:63
+  Rendered users/show.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 50ms (Views: 46.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/books" for 150.249.153.63 at 2019-02-27 09:58:43 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:7
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:54
+  Rendered books/index.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 70ms (Views: 66.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/books" for 150.249.153.63 at 2019-02-27 09:58:53 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pp66AHcL2iJbZ311UhC8fgGzz+XES3scsn6yHTj50K6576eC8NHMdGxI1v604+FKUdZNQbV3DOOcjE96rprEsg==", "book"=>{"title"=>"erh", "body"=>"werty"}, "commit"=>"Create Book"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:22
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:22
+  [1m[36mBook Create (0.9ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["title", "erh"], ["body", "werty"], ["created_at", "2019-02-27 09:58:53.150005"], ["updated_at", "2019-02-27 09:58:53.150005"], ["user_id", "8"]]
+  ↳ app/controllers/books_controller.rb:22
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/books_controller.rb:22
+Redirected to https://27a9f77623f2410f9b8bb59adf71d1f8.vfs.cloud9.ap-southeast-1.amazonaws.com/books/81
+Completed 302 Found in 14ms (ActiveRecord: 6.0ms)
+
+
+Started GET "/books/81" for 150.249.153.63 at 2019-02-27 09:58:53 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"81"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:14
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 81], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:16
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 53ms (Views: 49.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for 150.249.153.63 at 2019-02-27 10:01:24 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.9ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:30: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+..._field :title,class:"book_title" );@output_buffer.safe_appen...
+...                     ^~~~~~~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:33: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...ext_area :body,class:"book_body"  );@output_buffer.safe_appe...
+...                      ^~~~~~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:37: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+   <table class="table table-striped">
+                 ^~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:37: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...ble class="table table-striped">
+...                              ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:39: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+        <div class="col-xs-9">
+                    ^~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:39: syntax error, unexpected tSTRING_BEG, expecting tSTRING_DEND
+        <div class="col-xs-9">
+                            ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:45: syntax error, unexpected tINTEGER, expecting tSTRING_DEND
+       <th colspan="3"></th>
+                    ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:52: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...ill, 20, 20,fallback: "no_image.jpg" );@output_buffer.safe_a...
+...                       ^~~~~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:58: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...ut_buffer.append=( link_to"show",user_path(user),class:"user...
+...                           ^~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:58: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...w",user_path(user),class:"user_#{user.id}" );@output_buffer....
+...                          ^~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:61: unknown regexp options - tr
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:63: syntax error, unexpected '<'
+     </tbody>
+     ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:64: unknown regexp options - tabl
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:67: unknown regexp options - bdy
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:72: unterminated string meets end of file
+          end
+             ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:72: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+          end
+             ^):
+  
+app/views/users/index.html.erb:30: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:33: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:37: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:37: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+app/views/users/index.html.erb:39: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:39: syntax error, unexpected tSTRING_BEG, expecting tSTRING_DEND
+app/views/users/index.html.erb:45: syntax error, unexpected tINTEGER, expecting tSTRING_DEND
+app/views/users/index.html.erb:52: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:58: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:58: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:61: unknown regexp options - tr
+app/views/users/index.html.erb:63: syntax error, unexpected '<'
+app/views/users/index.html.erb:64: unknown regexp options - tabl
+app/views/users/index.html.erb:67: unknown regexp options - bdy
+app/views/users/index.html.erb:72: unterminated string meets end of file
+app/views/users/index.html.erb:72: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+Started GET "/users" for 150.249.153.63 at 2019-02-27 10:03:32 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:30: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...field :title,class: "book_title" );@output_buffer.safe_appen...
+...                     ^~~~~~~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:33: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...ext_area :body,class:"book_body"  );@output_buffer.safe_appe...
+...                      ^~~~~~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:37: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+   <table class="table table-striped">
+                 ^~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:37: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...ble class="table table-striped">
+...                              ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:39: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+        <div class="col-xs-9">
+                    ^~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:39: syntax error, unexpected tSTRING_BEG, expecting tSTRING_DEND
+        <div class="col-xs-9">
+                            ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:45: syntax error, unexpected tINTEGER, expecting tSTRING_DEND
+       <th colspan="3"></th>
+                    ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:52: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...ill, 20, 20,fallback: "no_image.jpg" );@output_buffer.safe_a...
+...                       ^~~~~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:58: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...ut_buffer.append=( link_to"show",user_path(user),class:"user...
+...                           ^~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:58: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...w",user_path(user),class:"user_#{user.id}" );@output_buffer....
+...                          ^~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:61: unknown regexp options - tr
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:63: syntax error, unexpected '<'
+     </tbody>
+     ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:64: unknown regexp options - tabl
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:67: unknown regexp options - bdy
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:72: unterminated string meets end of file
+          end
+             ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:72: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+          end
+             ^):
+  
+app/views/users/index.html.erb:30: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:33: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:37: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:37: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+app/views/users/index.html.erb:39: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:39: syntax error, unexpected tSTRING_BEG, expecting tSTRING_DEND
+app/views/users/index.html.erb:45: syntax error, unexpected tINTEGER, expecting tSTRING_DEND
+app/views/users/index.html.erb:52: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:58: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:58: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:61: unknown regexp options - tr
+app/views/users/index.html.erb:63: syntax error, unexpected '<'
+app/views/users/index.html.erb:64: unknown regexp options - tabl
+app/views/users/index.html.erb:67: unknown regexp options - bdy
+app/views/users/index.html.erb:72: unterminated string meets end of file
+app/views/users/index.html.erb:72: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+Started GET "/users" for 150.249.153.63 at 2019-02-27 10:04:00 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:30: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...field :title,class: "book_title" );@output_buffer.safe_appen...
+...                     ^~~~~~~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:33: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...ext_area :body,class:"book_body"  );@output_buffer.safe_appe...
+...                      ^~~~~~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:37: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+   <table class="table table-striped">
+                 ^~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:37: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...ble class="table table-striped">
+...                              ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:39: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+        <div class="col-xs-9">
+                    ^~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:39: syntax error, unexpected tSTRING_BEG, expecting tSTRING_DEND
+        <div class="col-xs-9">
+                            ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:45: syntax error, unexpected tINTEGER, expecting tSTRING_DEND
+       <th colspan="3"></th>
+                    ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:52: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...ill, 20, 20,fallback: "no_image.jpg" );@output_buffer.safe_a...
+...                       ^~~~~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:58: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...ut_buffer.append=( link_to"show",user_path(user),class:"user...
+...                           ^~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:58: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...w",user_path(user),class:"user_#{user.id}" );@output_buffer....
+...                          ^~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:61: unknown regexp options - tr
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:63: syntax error, unexpected '<'
+     </tbody>
+     ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:64: unknown regexp options - tabl
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:67: unknown regexp options - bdy
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:72: unterminated string meets end of file
+          end
+             ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:72: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+          end
+             ^):
+  
+app/views/users/index.html.erb:30: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:33: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:37: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:37: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+app/views/users/index.html.erb:39: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:39: syntax error, unexpected tSTRING_BEG, expecting tSTRING_DEND
+app/views/users/index.html.erb:45: syntax error, unexpected tINTEGER, expecting tSTRING_DEND
+app/views/users/index.html.erb:52: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:58: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:58: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:61: unknown regexp options - tr
+app/views/users/index.html.erb:63: syntax error, unexpected '<'
+app/views/users/index.html.erb:64: unknown regexp options - tabl
+app/views/users/index.html.erb:67: unknown regexp options - bdy
+app/views/users/index.html.erb:72: unterminated string meets end of file
+app/views/users/index.html.erb:72: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+Started GET "/users" for 150.249.153.63 at 2019-02-27 10:04:18 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:33: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...ext_area :body,class:"book_body"  );@output_buffer.safe_appe...
+...                      ^~~~~~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:37: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+   <table class="table table-striped">
+                 ^~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:37: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...ble class="table table-striped">
+...                              ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:39: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+        <div class="col-xs-9">
+                    ^~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:39: syntax error, unexpected tSTRING_BEG, expecting tSTRING_DEND
+        <div class="col-xs-9">
+                            ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:45: syntax error, unexpected tINTEGER, expecting tSTRING_DEND
+       <th colspan="3"></th>
+                    ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:52: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...ill, 20, 20,fallback: "no_image.jpg" );@output_buffer.safe_a...
+...                       ^~~~~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:58: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...ut_buffer.append=( link_to"show",user_path(user),class:"user...
+...                           ^~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:58: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...w",user_path(user),class:"user_#{user.id}" );@output_buffer....
+...                          ^~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:61: unknown regexp options - tr
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:63: syntax error, unexpected '<'
+     </tbody>
+     ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:64: unknown regexp options - tabl
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:67: unknown regexp options - bdy
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:72: unterminated string meets end of file
+          end
+             ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:72: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+          end
+             ^):
+  
+app/views/users/index.html.erb:33: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:37: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:37: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+app/views/users/index.html.erb:39: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:39: syntax error, unexpected tSTRING_BEG, expecting tSTRING_DEND
+app/views/users/index.html.erb:45: syntax error, unexpected tINTEGER, expecting tSTRING_DEND
+app/views/users/index.html.erb:52: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:58: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:58: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:61: unknown regexp options - tr
+app/views/users/index.html.erb:63: syntax error, unexpected '<'
+app/views/users/index.html.erb:64: unknown regexp options - tabl
+app/views/users/index.html.erb:67: unknown regexp options - bdy
+app/views/users/index.html.erb:72: unterminated string meets end of file
+app/views/users/index.html.erb:72: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+Started GET "/users" for 150.249.153.63 at 2019-02-27 10:04:33 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:36: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+   <table class="table table-striped">
+                 ^~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:36: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...ble class="table table-striped">
+...                              ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:38: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+        <div class="col-xs-9">
+                    ^~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:38: syntax error, unexpected tSTRING_BEG, expecting tSTRING_DEND
+        <div class="col-xs-9">
+                            ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:44: syntax error, unexpected tINTEGER, expecting tSTRING_DEND
+       <th colspan="3"></th>
+                    ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:51: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...ill, 20, 20,fallback: "no_image.jpg" );@output_buffer.safe_a...
+...                       ^~~~~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:57: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...ut_buffer.append=( link_to"show",user_path(user),class:"user...
+...                           ^~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:57: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...w",user_path(user),class:"user_#{user.id}" );@output_buffer....
+...                          ^~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:60: unknown regexp options - tr
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:62: syntax error, unexpected '<'
+     </tbody>
+     ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:63: unknown regexp options - tabl
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:66: unknown regexp options - bdy
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:71: unterminated string meets end of file
+          end
+             ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:71: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+          end
+             ^):
+  
+app/views/users/index.html.erb:36: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:36: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+app/views/users/index.html.erb:38: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:38: syntax error, unexpected tSTRING_BEG, expecting tSTRING_DEND
+app/views/users/index.html.erb:44: syntax error, unexpected tINTEGER, expecting tSTRING_DEND
+app/views/users/index.html.erb:51: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:57: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:57: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:60: unknown regexp options - tr
+app/views/users/index.html.erb:62: syntax error, unexpected '<'
+app/views/users/index.html.erb:63: unknown regexp options - tabl
+app/views/users/index.html.erb:66: unknown regexp options - bdy
+app/views/users/index.html.erb:71: unterminated string meets end of file
+app/views/users/index.html.erb:71: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+Started GET "/users" for 150.249.153.63 at 2019-02-27 10:05:37 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:30: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...field :title,class: "book_title" );@output_buffer.safe_appen...
+...                     ^~~~~~~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:33: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...ext_area :body,class:"book_body"  );@output_buffer.safe_appe...
+...                      ^~~~~~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:38: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+   <table class="table table-striped">
+                 ^~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:38: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...ble class="table table-striped">
+...                              ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:40: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+        <div class="col-xs-9">
+                    ^~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:40: syntax error, unexpected tSTRING_BEG, expecting tSTRING_DEND
+        <div class="col-xs-9">
+                            ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:46: syntax error, unexpected tINTEGER, expecting tSTRING_DEND
+       <th colspan="3"></th>
+                    ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:53: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...ill, 20, 20,fallback: "no_image.jpg" );@output_buffer.safe_a...
+...                       ^~~~~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:59: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...ut_buffer.append=( link_to"show",user_path(user),class:"user...
+...                           ^~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:59: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...w",user_path(user),class:"user_#{user.id}" );@output_buffer....
+...                          ^~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:62: unknown regexp options - tr
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:64: syntax error, unexpected '<'
+     </tbody>
+     ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:65: unknown regexp options - tabl
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:68: unknown regexp options - bdy
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:73: unterminated string meets end of file
+          end
+             ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:73: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+          end
+             ^):
+  
+app/views/users/index.html.erb:30: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:33: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:38: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:38: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+app/views/users/index.html.erb:40: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:40: syntax error, unexpected tSTRING_BEG, expecting tSTRING_DEND
+app/views/users/index.html.erb:46: syntax error, unexpected tINTEGER, expecting tSTRING_DEND
+app/views/users/index.html.erb:53: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:59: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:59: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:62: unknown regexp options - tr
+app/views/users/index.html.erb:64: syntax error, unexpected '<'
+app/views/users/index.html.erb:65: unknown regexp options - tabl
+app/views/users/index.html.erb:68: unknown regexp options - bdy
+app/views/users/index.html.erb:73: unterminated string meets end of file
+app/views/users/index.html.erb:73: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+Started GET "/users" for 150.249.153.63 at 2019-02-27 10:06:01 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:34: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+   <table class="table table-striped">
+                 ^~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:34: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...ble class="table table-striped">
+...                              ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:36: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+        <div class="col-xs-9">
+                    ^~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:36: syntax error, unexpected tSTRING_BEG, expecting tSTRING_DEND
+        <div class="col-xs-9">
+                            ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:42: syntax error, unexpected tINTEGER, expecting tSTRING_DEND
+       <th colspan="3"></th>
+                    ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:49: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...ill, 20, 20,fallback: "no_image.jpg" );@output_buffer.safe_a...
+...                       ^~~~~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:55: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...ut_buffer.append=( link_to"show",user_path(user),class:"user...
+...                           ^~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:55: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...w",user_path(user),class:"user_#{user.id}" );@output_buffer....
+...                          ^~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:58: unknown regexp options - tr
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:60: syntax error, unexpected '<'
+     </tbody>
+     ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:61: unknown regexp options - tabl
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:64: unknown regexp options - bdy
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:69: unterminated string meets end of file
+          end
+             ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:69: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+          end
+             ^):
+  
+app/views/users/index.html.erb:34: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:34: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+app/views/users/index.html.erb:36: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:36: syntax error, unexpected tSTRING_BEG, expecting tSTRING_DEND
+app/views/users/index.html.erb:42: syntax error, unexpected tINTEGER, expecting tSTRING_DEND
+app/views/users/index.html.erb:49: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:55: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:55: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:58: unknown regexp options - tr
+app/views/users/index.html.erb:60: syntax error, unexpected '<'
+app/views/users/index.html.erb:61: unknown regexp options - tabl
+app/views/users/index.html.erb:64: unknown regexp options - bdy
+app/views/users/index.html.erb:69: unterminated string meets end of file
+app/views/users/index.html.erb:69: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+Started GET "/users" for 150.249.153.63 at 2019-02-27 10:06:14 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:30: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+   <table class="table table-striped">
+                 ^~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:30: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...ble class="table table-striped">
+...                              ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:32: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+        <div class="col-xs-9">
+                    ^~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:32: syntax error, unexpected tSTRING_BEG, expecting tSTRING_DEND
+        <div class="col-xs-9">
+                            ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:38: syntax error, unexpected tINTEGER, expecting tSTRING_DEND
+       <th colspan="3"></th>
+                    ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:45: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...ill, 20, 20,fallback: "no_image.jpg" );@output_buffer.safe_a...
+...                       ^~~~~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:51: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...ut_buffer.append=( link_to"show",user_path(user),class:"user...
+...                           ^~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:51: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...w",user_path(user),class:"user_#{user.id}" );@output_buffer....
+...                          ^~~~~
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:54: unknown regexp options - tr
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:56: syntax error, unexpected '<'
+     </tbody>
+     ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:57: unknown regexp options - tabl
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:60: unknown regexp options - bdy
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:65: unterminated string meets end of file
+          end
+             ^
+/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:65: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+          end
+             ^):
+  
+app/views/users/index.html.erb:30: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:30: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+app/views/users/index.html.erb:32: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:32: syntax error, unexpected tSTRING_BEG, expecting tSTRING_DEND
+app/views/users/index.html.erb:38: syntax error, unexpected tINTEGER, expecting tSTRING_DEND
+app/views/users/index.html.erb:45: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:51: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:51: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/users/index.html.erb:54: unknown regexp options - tr
+app/views/users/index.html.erb:56: syntax error, unexpected '<'
+app/views/users/index.html.erb:57: unknown regexp options - tabl
+app/views/users/index.html.erb:60: unknown regexp options - bdy
+app/views/users/index.html.erb:65: unterminated string meets end of file
+app/views/users/index.html.erb:65: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+Started GET "/users" for 150.249.153.63 at 2019-02-27 10:07:53 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/kadai3/app/views/users/index.html.erb:70: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/users/index.html.erb:70: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/users" for 150.249.153.63 at 2019-02-27 10:08:16 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:49
+  Rendered users/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 1459ms (Views: 1456.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for 150.249.153.63 at 2019-02-27 10:08:32 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:49
+  Rendered users/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 45ms (Views: 41.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/8" for 150.249.153.63 at 2019-02-27 10:08:35 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:24
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", "8"]]
+  ↳ app/views/users/show.html.erb:63
+  Rendered users/show.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 47ms (Views: 44.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books" for 150.249.153.63 at 2019-02-27 10:08:37 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:7
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:54
+  Rendered books/index.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 59ms (Views: 55.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for 150.249.153.63 at 2019-02-27 10:08:39 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:49
+  Rendered users/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 44ms (Views: 41.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/8" for 150.249.153.63 at 2019-02-27 10:08:41 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:24
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", "8"]]
+  ↳ app/views/users/show.html.erb:63
+  Rendered users/show.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 47ms (Views: 43.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for 150.249.153.63 at 2019-02-27 10:08:42 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:49
+  Rendered users/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 44ms (Views: 41.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/8" for 150.249.153.63 at 2019-02-27 10:08:49 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:24
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", "8"]]
+  ↳ app/views/users/show.html.erb:63
+  Rendered users/show.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 45ms (Views: 43.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for 150.249.153.63 at 2019-02-27 10:08:51 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:49
+  Rendered users/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 54ms (Views: 51.1ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/users/sign_out" for 150.249.153.63 at 2019-02-27 10:09:26 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"SbkDUNNmSEOQ7q6ga1pSzqubbCNKzsp5w7cBdZbHRucMBWWZCX4m6K1mqCNIO4vuEmn8tC/Hp68TaeEu1cQIhw=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Redirected to https://27a9f77623f2410f9b8bb59adf71d1f8.vfs.cloud9.ap-southeast-1.amazonaws.com/
+Completed 302 Found in 13ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 150.249.153.63 at 2019-02-27 10:09:27 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#top as HTML
+  Rendering users/top.html.erb within layouts/application
+  Rendered users/top.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 42ms (Views: 41.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 150.249.153.63 at 2019-02-27 10:09:29 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 43ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 150.249.153.63 at 2019-02-27 10:09:30 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KnxxoXW89jXg0IwRZmkqtCLAvIwbWY6mkbBycV5bdZxbNGXxANBfLxcppQ3Zfh2OY34EXgzc7YPedXNbFM/Vmg==", "user"=>{"username"=>"yuiyui", "password"=>"[FILTERED]"}, "commit"=>"サインイン"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["username", "yuiyui"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (0.8ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2019-02-27 10:09:31.108000"], ["last_sign_in_at", "2019-02-27 07:59:02.485669"], ["sign_in_count", 4], ["updated_at", "2019-02-27 10:09:31.109572"], ["id", 8]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (7.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Redirected to https://27a9f77623f2410f9b8bb59adf71d1f8.vfs.cloud9.ap-southeast-1.amazonaws.com/
+Completed 302 Found in 171ms (ActiveRecord: 8.2ms)
+
+
+Started GET "/" for 150.249.153.63 at 2019-02-27 10:09:31 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#top as HTML
+  Rendering users/top.html.erb within layouts/application
+  Rendered users/top.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:24
+Completed 200 OK in 41ms (Views: 40.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/8" for 150.249.153.63 at 2019-02-27 10:09:33 +0000
+Cannot render console from 150.249.153.63! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:24
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", "8"]]
+  ↳ app/views/users/show.html.erb:63
+  Rendered users/show.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 95ms (Views: 92.9ms | ActiveRecord: 0.4ms)
+
+
