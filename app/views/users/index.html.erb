@@ -2,7 +2,7 @@
 <div class="col-xs-3">
 <h2>User info</h2>
 
- <%= attachment_image_tag @user, :profile_image, :fill, 20, 20,fallback: "no_image.jpg" %>
+ <%= attachment_image_tag @user, :profile_image, :fill, 100, 100,fallback: "no_image.jpg", size: '100x100' %>
       
 <table class="table">
 <tbody>
@@ -15,8 +15,8 @@
         <th>introduction</th>
         <th><%= @user.introduction %></th>
     </tr>    
-       <tr> <%= link_to "",edit_user_path(@user), class:"glyphicon glyphicon-wrench edit_user_#{@user.id}"%> </tr>
-         
+       <th> <%= link_to "",edit_user_path(@user), class:"glyphicon glyphicon-wrench edit_user_#{@user.id}"%> </th>
+          
     </tr>
   </tbody>  
   
@@ -34,11 +34,11 @@
    <% end %>
 </div>
 
-   <thead>
-        <div class="col-xs-9">
-   <table class="table table-striped">
+  <div class="col-xs-9">
       
-     <h3> User</h3>
+     <h2> User</h2>
+ <table class="table table table-hover table-inverse">
+   <thead>
       <tr>
           <th>image</th>
        <th>name</th>
@@ -49,18 +49,15 @@
     <tbody>
       <% @users.each do |user| %>
       <tr>
-       <td>
-         <%= attachment_image_tag user, :profile_image, :fill, 20, 20,fallback: "no_image.jpg" %>
-       </td>
+       
        <td>
         <%= user.username %>
        </td>
        <td>
            <%= link_to"show",user_path(user),class:"user_#{user.id}" %>
        </td>
-        <% end %>
+          <% end %>
       </tr>
-         
      </tbody>
   </table>
 </div>

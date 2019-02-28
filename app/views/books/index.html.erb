@@ -3,7 +3,7 @@
 <div class="col-xs-3">
 <h2>User info</h2>
 
- <%= attachment_image_tag @user, :profile_image, :fill, 20, 20,fallback: "no_image.jpg" %>
+ <%= attachment_image_tag @user, :profile_image, :fill, 100, 100,fallback: "no_image.jpg", size: '100x100'  %>
       
 <table class="table">
 <tbody>
@@ -16,7 +16,7 @@
         <th>introduction</th>
         <th><%= @user.introduction %></th>
     </tr>    
-       <tr> <%= link_to "",edit_user_path(@user), class:"glyphicon glyphicon-wrench edit_user_#{@user.id}	"%> </tr>
+       <th> <%= link_to "",edit_user_path(@user), class:"glyphicon glyphicon-wrench edit_user_#{@user.id}	"%> </th>
          
     </tr>
   </tbody>  
@@ -40,7 +40,7 @@
 <div class="col-xs-9">
  <h2> Books</h2>
  
- <table class="table table-striped">
+ <table class="table table table-hover table-inverse">
      <thead>
       <tr>
        <th> </th>
@@ -54,7 +54,7 @@
       <% @books.each do |book| %>
       <tr>
        <td>
-         <%= attachment_image_tag book.user, :profile_image, :fill, 20, 20,fallback: "no_image.jpg" %>
+         <%= attachment_image_tag book.user, :profile_image, :fill, 40, 40,fallback: "no_image.jpg", size: '40x40' %>
        </td>
        <td>
         <%=link_to book.title,book_path(book.id),class:"book_#{book.id}" %>
