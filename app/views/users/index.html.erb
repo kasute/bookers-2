@@ -15,7 +15,7 @@
         <th>introduction</th>
         <th><%= @user.introduction %></th>
     </tr>    
-       <th> <%= link_to "",edit_user_path(@user), class:"glyphicon glyphicon-wrench edit_user_#{@user.id}"%> </th>
+       <th> <%= link_to "",edit_user_path(@user), class:"btn btn-default col-xs-12 glyphicon glyphicon-wrench edit_user_#{@user.id}"%> </th>
           
     </tr>
   </tbody>  
@@ -49,7 +49,9 @@
     <tbody>
       <% @users.each do |user| %>
       <tr>
-       
+       <td>
+         <%= attachment_image_tag user, :profile_image, :fill, 40, 40,fallback: "no_image.jpg",size: '40x40' %>
+       </td>
        <td>
         <%= user.username %>
        </td>
