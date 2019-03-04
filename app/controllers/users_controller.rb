@@ -1,20 +1,18 @@
 class UsersController < ApplicationController
   
-   before_action :authenticate_user!
+   before_action :authenticate_user!, only: [:show , :update, :index, :edit]
  
-   
+  def top
+  end
+  
+  def about
+  end
+  
   def show
     
     @book= Book.new
     @books= Book.all
     @user= User.find(params[:id])
-  end
-  
-  def create
-  
-  end
-  
-  def root
   end
 
   def index
@@ -22,19 +20,6 @@ class UsersController < ApplicationController
     @book =Book.new
     @user_image = UserImage.new
     @users = User.all
-  end
-  
-  def top
-  end
-  
-  def about
-    
-  end
-  
-  def name
-  end
-  
-  def new
   end
   
   def edit
