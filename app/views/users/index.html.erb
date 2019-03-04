@@ -15,7 +15,9 @@
         <th>introduction</th>
         <th><%= @user.introduction %></th>
     </tr>    
-       <th> <%= link_to "",edit_user_path(@user), class:"btn btn-default col-xs-12 glyphicon glyphicon-wrench edit_user_#{@user.id}"%> </th>
+       <th>
+            <%= link_to "",edit_user_path(@user), class:"btn btn-default col-xs-12 glyphicon glyphicon-wrench edit_user_#{@user.id}"%>
+       </th>
           
     </tr>
   </tbody>  
